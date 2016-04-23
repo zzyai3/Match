@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.zhouzhongyi.match.MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    >
+<LinearLayout
+    android:id="@+id/lin1"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    >
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="输入主队名"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:id="@+id/teamas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="100dp"
+        />
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+3 point"
+        android:onClick="displaya3"
+        android:layout_margin="20dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorAccent"/>
+    <Button
+        android:id="@+id/button2"
+        android:onClick="displaya2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+2 point"
+        android:layout_margin="20dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorAccent"/>
+    <Button
+        android:id="@+id/button3"
+        android:onClick="displaya1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+free throw"
+        android:layout_margin="20dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorAccent"/>
+
+</LinearLayout>
+    <!--<View-->
+        <!--android:layout_width="1dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@android:color/darker_gray" />-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="输入客队名"
+            android:textSize="30dp"
+            android:layout_marginTop="20dp"
+            />
+        <TextView
+            android:id="@+id/teambs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="100dp"
+            />
+        <Button
+            android:id="@+id/button4"
+            android:onClick="displayb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3 pront"
+            android:layout_margin="20dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorAccent"/>
+        <Button
+            android:id="@+id/button5"
+            android:onClick="displayb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+2 point"
+            android:layout_margin="20dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorAccent"/>
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+free throw"
+            android:onClick="displayb1"
+            android:layout_margin="20dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorAccent"/>
+    </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_weight="0.5"
+        android:gravity="center_horizontal">
+        <Button
+            android:id="@+id/btReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="Reset"
+            android:onClick="resetScore"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorAccent" />
+    </LinearLayout>
+
+</LinearLayout>
